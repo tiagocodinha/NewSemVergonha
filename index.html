@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sem Vergonha — Restaurant Cocktail Bar | Nazaré</title>
+  <meta name="description" content="Sem Vergonha — Dine & Party em Nazaré. Restaurante, cocktail bar e social hub frente ao mar.">
+  <meta name="keywords" content="restaurante Nazaré, cocktail bar Nazaré, jantar Nazaré, onde jantar Nazaré">
+  <meta property="og:title" content="Sem Vergonha — Restaurant Cocktail Bar">
+  <meta property="og:description" content="Dine & Party em Nazaré. Nem jantar. Nem festa. Os dois.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://semvergonharestaurant.pt">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Sem Vergonha","url":"https://semvergonharestaurant.pt","servesCuisine":"Contemporary Portuguese","priceRange":"€€-€€€","address":{"@type":"PostalAddress","addressLocality":"Nazaré","addressCountry":"PT"},"openingHours":"Mo-Su 12:00-02:00","email":"hey@semvergonharestaurant.com"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">Sem Vergonha</a>
+    <div class="nav__links">
+      <a href="#historia">História</a>
+      <a href="#espaco">Espaço</a>
+      <a href="#carta">Carta</a>
+      <a href="#momentos">Momentos</a>
+    </div>
+    <a href="#reservas" class="nav__cta">Reservar</a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mobMenu">
+    <a href="#historia">História</a>
+    <a href="#espaco">Espaço</a>
+    <a href="#carta">Carta</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#reservas">Reservar</a>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__bg">
+      <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+        <source src="assets/semvergonha.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__content">
+      <p class="hero__over">Nazaré, Portugal</p>
+      <h1 class="hero__title">
+        <span class="hero__w">Sem</span>
+        <span class="hero__w hero__w--accent">Vergonha</span>
+      </h1>
+      <p class="hero__sub">Restaurant & Cocktail Bar</p>
+      <p class="hero__phrase">"Nem jantar. Nem festa. Os dois."</p>
+      <a href="#reservas" class="hero__btn">Reservar Mesa</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- INTRO — bright editorial -->
+  <section class="intro-section">
+    <div class="wrap">
+      <div class="intro-grid">
+        <div class="intro-left" data-r>
+          <span class="tag">Dine & Party · Desde 2026</span>
+          <h2>A noite<br>começa<br>aqui.</h2>
+        </div>
+        <div class="intro-right" data-r>
+          <p class="intro-lead">Não é só um restaurante. Não é uma discoteca. É um sítio onde <em>alguma coisa acontece</em>.</p>
+          <p>Aqui, o jantar evolui naturalmente para a noite. Os cocktails levam ao próximo prato. E a conversa leva a tudo o resto.</p>
+          <div class="intro-pills">
+            <span>Experiência</span>
+            <span>Produto</span>
+            <span>Permanência</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee marquee--dark">
+    <div class="marquee__inner">
+      <span>Vamos só beber um copo </span><span>· </span>
+      <span>Se sabes, sabes </span><span>· </span>
+      <span>O problema nunca foi o jantar </span><span>· </span>
+      <span>Aqui ninguém vem só comer </span><span>· </span>
+      <span>Há noites que começam à mesa </span><span>· </span>
+      <span>Jantar primeiro. O resto logo se vê </span><span>· </span>
+      <span>Vamos só beber um copo </span><span>· </span>
+      <span>Se sabes, sabes </span><span>· </span>
+      <span>O problema nunca foi o jantar </span><span>· </span>
+      <span>Aqui ninguém vem só comer </span><span>· </span>
+      <span>Há noites que começam à mesa </span><span>· </span>
+      <span>Jantar primeiro. O resto logo se vê </span><span>· </span>
+    </div>
+  </div>
+
+  <!-- HISTÓRIA -->
+  <section class="historia" id="historia">
+    <div class="wrap">
+      <div class="historia__grid">
+        <div class="historia__col" data-r>
+          <span class="tag">A Nossa História</span>
+          <h2>Tudo começou num muro.</h2>
+        </div>
+        <div class="historia__col" data-r>
+          <p class="historia__lead">Na Nazaré existe um muro que toda a gente conhece mas ninguém admite frequentar.</p>
+          <p>O <strong>"Muro da Pouca Vergonha"</strong> é um dos elementos mais icónicos da identidade cultural da vila. Historicamente, era o lugar onde os casais iam namorar — longe dos olhares, mas perto o suficiente para que toda a gente soubesse.</p>
+          <p>Pescadores que paravam para conversar. Casais que se escondiam à vista de todos. Gentes da vila que se juntavam para beber, rir e viver. O muro era o sítio onde <strong>as coisas aconteciam</strong> — sem cerimónia, sem filtro, sem vergonha.</p>
+          <p>O <strong>Sem Vergonha</strong> nasce desse espírito. Reinterpretamos essa tradição de convívio num contexto contemporâneo — um espaço onde ficar é sempre melhor do que ir embora.</p>
+        </div>
+      </div>
+      <div class="historia__quote" data-r>
+        <blockquote>"O nome não é provocação — é homenagem."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPAÇO — cards com contraste -->
+  <section class="espaco" id="espaco">
+    <div class="wrap">
+      <div class="section-header" data-r>
+        <span class="tag">O Espaço</span>
+        <h2>Cinco ambientes.<br>Uma experiência.</h2>
+        <p>~79 lugares distribuídos entre lounge, balcão, sala principal, sala semi-privada e esplanada frente ao mar.</p>
+      </div>
+      <div class="espaco__grid">
+        <div class="espaco__card" data-r style="--c:#6B1A2A">
+          <div class="espaco__card-bg"></div>
+          <div class="espaco__card-content">
+            <span class="espaco__num">01</span>
+            <h3>Lounge</h3>
+            <p>O primeiro momento. Cocktail na mão, música baixa, luz âmbar. O warm-up perfeito.</p>
+          </div>
+        </div>
+        <div class="espaco__card" data-r style="--c:#2D5A47">
+          <div class="espaco__card-bg"></div>
+          <div class="espaco__card-content">
+            <span class="espaco__num">02</span>
+            <h3>Balcão</h3>
+            <p>Onde a magia se faz. Cocktails preparados à tua frente, conversa com quem te serve.</p>
+          </div>
+        </div>
+        <div class="espaco__card espaco__card--wide" data-r style="--c:#8B2438">
+          <div class="espaco__card-bg"></div>
+          <div class="espaco__card-content">
+            <span class="espaco__num">03</span>
+            <h3>Sala Principal</h3>
+            <p>O coração do Sem Vergonha. Mesa, partilha, sabor. A cena principal da noite.</p>
+          </div>
+        </div>
+        <div class="espaco__card" data-r style="--c:#1A3328">
+          <div class="espaco__card-bg"></div>
+          <div class="espaco__card-content">
+            <span class="espaco__num">04</span>
+            <h3>Semi-Privada</h3>
+            <p>Para quem quer o melhor dos dois mundos — privacidade sem perder a energia.</p>
+          </div>
+        </div>
+        <div class="espaco__card" data-r style="--c:#B8864E">
+          <div class="espaco__card-bg"></div>
+          <div class="espaco__card-content">
+            <span class="espaco__num">05</span>
+            <h3>Esplanada</h3>
+            <p>Frente ao mar. Brisa, sol, e a melhor vista da Nazaré. De dia ou à noite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASE GRANDE -->
+  <section class="big-phrase">
+    <div class="wrap">
+      <p data-r>"Jantar primeiro.<br><em>O resto logo se vê.</em>"</p>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <div class="section-header" data-r>
+        <span class="tag">A Carta</span>
+        <h2>Aqui ninguém<br>vem só comer.</h2>
+        <p>Cozinha de partilha e cocktails de autor. Pratos pensados para mesa, conversa e repetição.</p>
+      </div>
+      <div class="carta__grid">
+        <div class="carta__col" data-r>
+          <h3><span>C</span> Cozinha</h3>
+          <div class="carta__group">
+            <h4>Para Começar</h4>
+            <ul>
+              <li>Tábua de queijos & enchidos regionais</li>
+              <li>Croquetes de alheira com mel picante</li>
+              <li>Tártaro de atum com ponzu e wasabi</li>
+            </ul>
+          </div>
+          <div class="carta__group">
+            <h4>Para Partilhar</h4>
+            <ul>
+              <li>Polvo grelhado com batata esmagada</li>
+              <li>Arroz de marisco da Nazaré</li>
+              <li>Secretos de porco ibérico</li>
+            </ul>
+          </div>
+          <span class="carta__note">Menu completo em breve</span>
+        </div>
+        <div class="carta__col" data-r>
+          <h3><span>B</span> Bar</h3>
+          <div class="carta__group">
+            <h4>Cocktails de Autor</h4>
+            <ul>
+              <li><strong>Muro</strong> — gin, flor de sabugueiro, limão, tónica artesanal</li>
+              <li><strong>Maré Alta</strong> — rum envelhecido, coco, lima, bitters</li>
+              <li><strong>Pouca Vergonha</strong> — vodka, maracujá, champanhe, vanilla</li>
+            </ul>
+          </div>
+          <div class="carta__group">
+            <h4>Clássicos Revisitados</h4>
+            <ul>
+              <li>Negroni da Casa</li>
+              <li>Espresso Martini</li>
+              <li>Old Fashioned com twist português</li>
+            </ul>
+          </div>
+          <span class="carta__note">Carta completa em breve</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOMENTOS -->
+  <section class="momentos" id="momentos">
+    <div class="wrap">
+      <div class="section-header section-header--light" data-r>
+        <span class="tag tag--light">A Experiência</span>
+        <h2>Dine → Social → Party</h2>
+      </div>
+      <div class="momentos__grid">
+        <div class="momento" data-r>
+          <span class="momento__time">12h — 15h</span>
+          <h3>Almoço</h3>
+          <p>Sol, esplanada, pratos leves e um copo que sabe a férias.</p>
+        </div>
+        <div class="momento" data-r>
+          <span class="momento__time">15h — 19h</span>
+          <h3>Tarde</h3>
+          <p>Aperol na esplanada, brisa do mar. "Vamos só beber um copo."</p>
+        </div>
+        <div class="momento" data-r>
+          <span class="momento__time">19h — 23h</span>
+          <h3>Jantar</h3>
+          <p>Mesa posta, pratos de partilha. Há noites que começam à mesa.</p>
+        </div>
+        <div class="momento" data-r>
+          <span class="momento__time">23h — 02h</span>
+          <h3>Noite</h3>
+          <p>A música sobe. As luzes descem. O problema nunca foi o jantar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="reservas" id="reservas">
+    <div class="wrap">
+      <div class="reservas__grid">
+        <div class="reservas__left" data-r>
+          <span class="tag">Reservas</span>
+          <h2>Se sabes, sabes.</h2>
+          <p>Abertura em <strong>Julho 2026</strong>. Para eventos privados, grupos ou a sala semi-privada, contacta-nos directamente.</p>
+          <a href="mailto:hey@semvergonharestaurant.com" class="btn">Contactar →</a>
+        </div>
+        <div class="reservas__right" data-r>
+          <div class="reservas__stat">
+            <span>Horário</span>
+            <strong>12h — 02h</strong>
+          </div>
+          <div class="reservas__stat">
+            <span>Capacidade</span>
+            <strong>~79 lugares</strong>
+          </div>
+          <div class="reservas__stat">
+            <span>Ticket Médio</span>
+            <strong>~23€</strong>
+          </div>
+          <div class="reservas__events">
+            <h4>Próximos Eventos</h4>
+            <div class="reservas__ev"><span>Jul 2026</span> Soft Opening</div>
+            <div class="reservas__ev"><span>Jul 2026</span> Abertura Oficial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAZARÉ -->
+  <section class="nazare">
+    <div class="wrap wrap--narrow">
+      <span class="tag" data-r>Nazaré, Portugal</span>
+      <h2 data-r>Mar à porta,<br>mundo a entrar.</h2>
+      <p data-r>Ondas gigantes, tradição e uma energia que não se encontra em mais lado nenhum. O Sem Vergonha nasce aqui — frente marítima, no coração do fluxo turístico internacional — porque não fazia sentido ser noutro sítio.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <strong class="footer__name">Sem Vergonha</strong>
+          <span>Restaurant & Cocktail Bar</span>
+          <span>Nazaré, Portugal</span>
+        </div>
+        <div>
+          <strong>Contacto</strong>
+          <a href="mailto:hey@semvergonharestaurant.com">hey@semvergonharestaurant.com</a>
+          <span>12h00 — 02h00 · Todos os dias</span>
+        </div>
+        <div class="footer__social">
+          <a href="https://instagram.com/semvergonharestaurant" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/semvergonharestaurant" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://tiktok.com/@semvergonharestaurant" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Sem Vergonha</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
