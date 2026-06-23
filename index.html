@@ -14,13 +14,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://widget.letsumai.com/dist/embed.min.js" data-api-key="0bf29084-b7e0-4c90-8654-06c53f4949cb" data-widget-type="reservation"></script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <a href="#" class="nav__logo">
-      <span class="logo-sem">SEM</span><span class="logo-v">VERGONHA</span>
+      <img src="assets/semvergonha_logo.png" alt="Sem Vergonha" class="nav__logo-img">
     </a>
     <div class="nav__links">
       <a href="#sobre">Sobre</a>
@@ -29,7 +30,7 @@
       <a href="#experiencia">Experiência</a>
       <a href="#contacto">Contacto</a>
     </div>
-    <a href="#reservas" class="nav__cta">Reservar Mesa</a>
+    <a href="#" class="nav__cta umai-reserve" id="umai-reservation-button">Reservar Mesa</a>
     <button class="nav__burger" id="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -43,7 +44,7 @@
       <a href="#carta">Carta</a>
       <a href="#experiencia">Experiência</a>
       <a href="#contacto">Contacto</a>
-      <a href="#reservas" class="mob-menu__cta">Reservar Mesa</a>
+      <a href="#" class="mob-menu__cta umai-reserve">Reservar Mesa</a>
     </div>
   </div>
 
@@ -62,15 +63,12 @@
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <span class="hero__label">Nazaré, Portugal — Julho 2026</span>
       <h1 class="hero__title">
-        <span class="hero__sem">SEM</span>
-        <span class="hero__vergonha">VERGONHA</span>
+        <img src="assets/semvergonha_logo.png" alt="Sem Vergonha" class="hero__logo-img">
       </h1>
       <p class="hero__sub">Restaurant & Cocktail Bar</p>
       <div class="hero__actions">
-        <a href="#reservas" class="hero__btn hero__btn--fill">Reservar Mesa</a>
-        <a href="#carta" class="hero__btn hero__btn--outline">Ver Carta</a>
+        <a href="#" class="hero__btn hero__btn--fill umai-reserve">Reservar Mesa</a>
       </div>
     </div>
     <div class="hero__dots" id="heroDots">
@@ -80,12 +78,6 @@
     </div>
   </header>
 
-  <!-- TAGLINE BAR -->
-  <div class="tagline-bar">
-    <div class="wrap">
-      <p>"Nem jantar. Nem festa. <em>Os dois.</em>"</p>
-    </div>
-  </div>
 
   <!-- SOBRE / WHERE FUN MEETS FINE -->
   <section class="sobre" id="sobre">
@@ -255,7 +247,7 @@
         <h2>Se sabes, sabes.</h2>
         <p>Abertura em <strong>Julho 2026</strong>. Para eventos privados, grupos ou a sala semi-privada, contacta-nos directamente.</p>
         <div class="reservas__actions">
-          <a href="mailto:hey@semvergonharestaurant.com" class="btn btn--fill">Reservar Mesa</a>
+          <a href="#" class="btn btn--fill umai-reserve">Reservar Mesa</a>
           <a href="mailto:hey@semvergonharestaurant.com" class="btn btn--outline">Contactar</a>
         </div>
         <div class="reservas__info">
@@ -272,7 +264,7 @@
     <div class="wrap">
       <div class="footer__top">
         <div class="footer__brand">
-          <span class="logo-sem">SEM</span><span class="logo-v logo-v--big">VERGONHA</span>
+          <img src="assets/semvergonha_logo.png" alt="Sem Vergonha" class="footer__logo-img">
         </div>
         <p class="footer__tagline">Restaurant & Cocktail Bar · Nazaré, Portugal</p>
       </div>
@@ -302,5 +294,21 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+  function init() {
+    ["#umai-reservation-button", ".umai-reserve"].forEach(function(sel) {
+      var links = document.querySelectorAll(sel);
+      links.forEach(function(link) {
+        link.addEventListener("click", function(e) {
+          e.preventDefault();
+          umaiWidget.config({ apiKey: "0bf29084-b7e0-4c90-8654-06c53f4949cb", widgetType: "reservation" });
+          umaiWidget.openWidget();
+          return false;
+        });
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", init);
+  </script>
 </body>
 </html>
