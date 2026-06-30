@@ -13,6 +13,9 @@
 </head>
 <body>
 
+  <!-- FLOATING RESERVE BUTTON -->
+  <a href="#" class="floating-reserve umai-reserve">Reservar Mesa</a>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
     <a href="/" class="nav__logo">
@@ -57,20 +60,20 @@
     <div class="wrap">
       <div class="contacts" data-r>
         <div class="contacts__grid">
-          <div class="contacts__card">
+          <a href="https://maps.app.goo.gl/B9NCv4JooyDPM6Pa9" target="_blank" rel="noopener" class="contacts__card contacts__card--link">
             <div class="contacts__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <h3>Morada</h3>
             <p>Av. da República 6<br>2450-104 Nazaré</p>
-          </div>
-          <div class="contacts__card">
+          </a>
+          <a href="mailto:hey@semvergonharestaurant.com" class="contacts__card contacts__card--link">
             <div class="contacts__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><polyline points="2,6 12,13 22,6"/></svg>
             </div>
             <h3>Email</h3>
-            <p><a href="mailto:hey@semvergonharestaurant.com">hey@semvergonharestaurant.com</a></p>
-          </div>
+            <p>hey@semvergonharestaurant.com</p>
+          </a>
           <div class="contacts__card">
             <div class="contacts__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -78,25 +81,20 @@
             <h3>Horário</h3>
             <p>12h00 — 02h00<br>Todos os dias</p>
           </div>
-          <div class="contacts__card">
+          <a href="tel:+351912345678" class="contacts__card contacts__card--link">
             <div class="contacts__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
-            <h3>Reservas</h3>
-            <p><a href="#" class="umai-reserve">Reservar Mesa Online</a></p>
-          </div>
+            <h3>Telefone</h3>
+            <p>912 345 678</p>
+          </a>
         </div>
 
         <div class="contacts__social" data-r>
-          <a href="https://instagram.com/semvergonharestaurant" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://facebook.com/semvergonharestaurant" target="_blank" rel="noopener">Facebook</a>
-          <a href="https://tiktok.com/@semvergonharestaurant" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://instagram.com/semvergonharestaurant" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://facebook.com/semvergonharestaurant" target="_blank" rel="noopener" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://tiktok.com/@semvergonharestaurant" target="_blank" rel="noopener" aria-label="TikTok"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
         </div>
-      </div>
-
-      <!-- Google Maps embed -->
-      <div class="contacts__map" data-r>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.5!2d-9.071!3d39.601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDM2JzAzLjYiTiA5wrAwNCcxNS42Ilc!5e0!3m2!1spt-PT!2spt!4v1" width="100%" height="400" style="border:0; border-radius: 16px; margin-top: 48px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
@@ -105,15 +103,30 @@
   <footer class="footer">
     <div class="wrap">
       <div class="footer__inner">
-        <div class="footer__brand">
-          <img src="../assets/semvergonha_logo.png" alt="Sem Vergonha" class="footer__logo-img">
-          <p class="footer__tagline">Restaurant & Cocktail Bar · Nazaré, Portugal</p>
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img src="../assets/semvergonha_logo.png" alt="Sem Vergonha" class="footer__logo-img">
+            <p class="footer__tagline">Restaurant & Cocktail Bar</p>
+          </div>
         </div>
-        <div class="footer__nav">
-          <a href="/food-drinks/">Food & Drinks</a>
-          <a href="/experiencia/">Experiência</a>
-          <a href="/eventos/">Eventos</a>
-          <a href="/contactos/">Contactos</a>
+        <div class="footer__grid">
+          <div class="footer__col">
+            <strong>Horário</strong>
+            <span>12h00 — 02h00</span>
+            <span>Todos os dias</span>
+          </div>
+          <div class="footer__col">
+            <strong>Contacto</strong>
+            <a href="mailto:hey@semvergonharestaurant.com">hey@semvergonharestaurant.com</a>
+          </div>
+          <div class="footer__col">
+            <strong>Segue-nos</strong>
+            <div class="footer__social">
+              <a href="https://instagram.com/semvergonharestaurant" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="https://facebook.com/semvergonharestaurant" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="https://tiktok.com/@semvergonharestaurant" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+            </div>
+          </div>
         </div>
         <div class="footer__bottom">
           <span>Av. da República 6, 2450-104 Nazaré</span>
