@@ -1,10 +1,25 @@
 (function () {
   'use strict';
 
-  // ── NAV SCROLL ──
+  // ── NAV SCROLL + FLOATING BUTTON ──
   var nav = document.getElementById('nav');
+  var floatingBtn = document.querySelector('.floating-reserve');
+  var lastScrollY = 0;
+
   window.addEventListener('scroll', function () {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 40);
+    nav.classList.toggle('nav--faded', y > 10);
+
+    if (floatingBtn) {
+      if (y > lastScrollY && y > 10) {
+        floatingBtn.classList.add('floating-reserve--visible');
+      } else {
+        floatingBtn.classList.remove('floating-reserve--visible');
+      }
+    }
+
+    lastScrollY = y;
   }, { passive: true });
 
   // ── MOBILE MENU ──
